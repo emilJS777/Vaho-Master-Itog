@@ -168,13 +168,13 @@
  .lang > a{
      text-decoration: underline;
      font-weight: bold;
-     color: #0b0b0b;
+     color: #0b0b0b !important;
  }
  .lang > a:hover{
-     color: #ffc000;
+     color: #ffc000 !important;
  }
  .lang-footer > a{
-     color: #ffc000;
+     color: #ffc000 !important;
  }
  .site-btn:hover {
    color: #fff;
