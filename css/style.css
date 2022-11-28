@@ -128,7 +128,17 @@
  /*---------------------
  Commom elements
   -----------------------*/
- 
+.header-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+}
+body{
+    padding-top: 87px;
+}
  .element {
    margin-bottom: 85px;
  }
@@ -1886,6 +1896,9 @@
  /* Tablet :768px. */
  
  @media only screen and (min-width: 768px) and (max-width: 991px) {
+     body{
+         padding-top: 234px;
+     }
    .site-navbar {
      text-align: center;
    }
@@ -1970,6 +1983,9 @@
  /* Large Mobile :480px. */
  
  @media only screen and (max-width: 767px) {
+     body{
+         padding-top: 155px;
+     }
    .header-top {
      padding: 14px 0;
      text-align: center;
