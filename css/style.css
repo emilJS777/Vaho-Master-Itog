@@ -1094,6 +1094,9 @@ body{
  
  .footer-info-box {
    margin-bottom: 30px;
+     height: 35px;
+     display: flex;
+     align-items: center;
  }
  
  .footer-info-box .fib-icon {
@@ -1979,7 +1982,9 @@ body{
      padding-top: 50px;
    }
  }
- 
+ .color-icon-yellow{
+     color: #dca03d;
+ }
  /* Large Mobile :480px. */
  
  @media only screen and (max-width: 767px) {
@@ -1994,7 +1999,8 @@ body{
          margin-top: 10px;
      }
      .site-logo{
-         display: none !important;
+         position: absolute;
+         top: -10px;
      }
    .header-top {
      padding: 14px 0;
