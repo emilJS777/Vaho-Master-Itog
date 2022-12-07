@@ -994,7 +994,9 @@ body{
    color: #fff;
    background: rgba(255, 255, 255, 0.27);
  }
- 
+ .color-icon-yellow-2{
+     color: #febc48;
+ }
  /* ----------------
   Footer Section
  ---------------------*/
@@ -1431,7 +1433,7 @@ body{
    padding: 60px 39px 58px;
    margin-bottom: 33px;
  }
- 
+
  .info-box h3 {
    font-size: 22px;
    font-weight: 300;
@@ -1988,6 +1990,7 @@ body{
  /* Large Mobile :480px. */
  
  @media only screen and (max-width: 767px) {
+
      body{
          padding-top: 65px;
      }
@@ -2119,6 +2122,17 @@ body{
  /* Small Mobile :320px. */
  
  @media only screen and (max-width: 479px) {
+     .hero-item h2 span{
+         margin-bottom: 20px !important;
+     }
+     .hero-item .site-btn{
+         text-align: center;
+         display: block;
+         margin-top: 100px;
+         margin-left: 20px;
+         position: static;
+         width: max-content;
+     }
      .hero-item h2 span{
          font-size: 26px;
          padding-left: 0;
