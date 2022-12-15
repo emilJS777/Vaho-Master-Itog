@@ -2000,6 +2000,7 @@ body{
      }
      .slicknav_menu a {
          margin-top: 10px;
+         position: relative;
      }
      .site-logo{
          position: absolute;
@@ -2023,7 +2024,7 @@ body{
      margin-bottom: 20px;
      text-align: center;
    }
-   .header-right {
+   .header-right .header-info-box {
      display: none;
    }
    .header-info-box {
@@ -2199,6 +2200,9 @@ body{
 }
 .color-green{
     color: #1c7430;
+}
+.color-dark{
+    color: #333;
 }
 .color-violet{
     color: #5355cc;

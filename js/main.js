@@ -32,6 +32,43 @@ $(window).on('load', function() {
 		allowParentLinks: true
 	});
 
+	
+	$(document).click(function (e) {
+		if ($(e.target).closest(".site-nav-menu > ul").length || $(e.target).closest(".slicknav_menu").length) {
+			// клик внутри элемента
+			return;
+		}
+		// клик снаружи элемента
+		$(".site-nav-menu > ul").slicknav('close');
+	});
+
+	
+	if (window.location.href.includes('.ru')) {
+
+		let newLocation = ''
+
+		if (window.location.href.includes('index.ru.html') ) {
+			newLocation = 'index.html'
+		} else {
+			newLocation = window.location.href.replace('.ru', '.am' )
+		}
+
+		$('.slicknav_nav').append(`<a href="${newLocation}">ՀԱՅ</a>`);
+	} else {
+
+		
+		let newLocation = ''
+
+		if (window.location.href.includes('index.html') || !window.location.href.includes('.html')) {
+			newLocation = 'index.ru.html'
+		} else {
+			newLocation = window.location.href.replace('.am.html', '.ru.html' )
+		}
+		
+
+		$('.slicknav_nav').append(`<a href="${newLocation}">РУС</a>`);
+	}
+
 	$('.slicknav_nav').append('<li class="search-switch-warp"><button class="search-switch"><i class="fa fa-search"></i></button></li>');
 
 
